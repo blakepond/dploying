@@ -8,7 +8,7 @@ app.get('/',(req, res) => {
 })
 
 
-app.use(express.static('/deployment'))
+app.use(express.static(path.join(__dirname, '../styles.css')))
 
 const port = process.env.PORT || 4005
 

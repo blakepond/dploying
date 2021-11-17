@@ -8,10 +8,10 @@ app.get('/',(req, res) => {
 })
 
 
-app.get('/css', (req,res) => {
-    res.sendFile(path.join(__dirname, '../public/styles.css'))
-})
-// app.use('/css', express.static(path.join(__dirname, '..public/styles.css')))
+// app.get('/css', (req,res) => {
+//     res.sendFile(path.join(__dirname, '../public/styles.css'))
+// })
+app.use("/css", express.static(path.join(__dirname, "/public/styles.css")));
 app.get('/js', (req,res) => {
     res.sendFile(path.join(__dirname, '../public/main.js'))
 })

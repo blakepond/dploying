@@ -6,9 +6,9 @@ const app = express()
 app.get('/',(req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
-express.static(root, [options])
 
-app.use(express.static('public'))
+
+app.use(express.static('deployment'))
 
 const port = process.env.PORT || 4005
 

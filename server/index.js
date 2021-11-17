@@ -8,7 +8,7 @@ app.get('/',(req, res) => {
 })
 
 
-app.get('/css', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../styles.css'))
   })
 

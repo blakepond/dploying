@@ -8,9 +8,7 @@ app.get('/',(req, res) => {
 })
 
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../styles.css'))
-  })
+app.use('/static', express.static('deployment'));
 
 
 const port = process.env.PORT || 4005

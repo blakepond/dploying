@@ -8,7 +8,7 @@ app.get('/',(req, res) => {
 })
 
 
-app.use('/static', express.static('deployment'));
+app.use('/styles', express.static('../styles.css'));
 
 
 const port = process.env.PORT || 4005
